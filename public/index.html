@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>MY chat</title>
+    <link rel="stylesheet" href="style/chat.css">
+</head>
+<body>
+
+
+<canvas width="600" height="300"></canvas>
+<input type="checkbox" id="stop_ball">stop ball</input>
+<a href="javascript:animate()">start ball</a>
+<a href="javascript:onGetCircles()">onGetCircles</a>
+<h1>My real time chat</h1>
+
+<ul id="chat">
+</ul>
+<form id="say">
+    <input id="user-name" type="text"> 
+    <input id="text" type="text" name="text">
+    <button onsubmit="return false">submit to message</button>
+</form>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="src/clicks.js"></script>
+
+<script src="src/main.js"></script>
+<script src="src/gaphics.js"></script>
+
+</body>
+</html>
